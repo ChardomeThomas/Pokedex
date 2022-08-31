@@ -11,7 +11,7 @@ import { catchError, map, tap } from 'rxjs/operators';
 
 export class PokeApiService {
   
-  public url = 'https://pokeapi.co/api/v2/pokemon';
+  public url = 'https://pokeapi.co/api/v2/pokemon?limit=151';
   constructor( private http: HttpClient) { }
 
   getPokemonInfo() :  Observable<PokeDetail[]> {
